@@ -3,254 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PakTools - Free Online Tools for Pakistan</title>
-<meta name="description" content="Free online tools for Pakistani students and job seekers. Passport photo maker, image to PDF, percentage calculator, age calculator and more.">
-<meta name="keywords" content="passport size photo maker Pakistan, image to pdf online free, percentage calculator Pakistan">
-<link rel="stylesheet" href="style.css">
-<meta name="google-site-verification" content="qGxUgslnAeW4ejsb3b2jo496VoYFXIluK37zAp7Pbqw" />
+<title>PakTools - Free Online Tools | Image Resizer, Age Calculator & More</title>
+<meta name="description" content="PakTools - 100% Free online tools for Pakistan. Image Resizer, Age Calculator, BMI Calculator, Image to PDF. No signup, fast & easy.">
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f8fafc;color:#111}
+header{background:#2563eb;color:#fff;padding:25px 15px;text-align:center}
+header h1{margin:0;font-size:28px}
+header p{opacity:.9;margin:8px 0 0}
+.wrap{max-width:800px;margin:0 auto;padding:20px 15px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:12px 0;display:flex;justify-content:space-between;align-items:center}
+.card b{font-size:18px}
+.card a{background:#2563eb;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:bold}
+footer{text-align:center;color:#666;padding:20px;font-size:13px}
+</style>
 </head>
 <body>
-
 <header>
-    <a href="#home" class="logo">PakTools 🇵🇰</a>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#tools">Tools</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#privacy">Privacy</a>
-    </nav>
+<h1>PakTools 🇵🇰</h1>
+<p>100% Free, Fast & Easy Online Tools</p>
 </header>
-
-<main>
-<section id="home" class="hero">
-    <h1>Free Tools for Every Pakistani Student & Job Seeker</h1>
-    <p>No Sign Up, 100% Free. Useful tools for everyone in Pakistan.</p>
-    <a href="#tools" class="btn">Explore Free Tools</a>
-</section>
-
-<section id="tools" class="container">
-    <h2>Our Free Online Tools</h2>
-    <div class="grid">
-        <article class="card"><div class="emoji">📷</div><h3>Passport Size Photo Maker</h3><p>Create 35 × 45 mm passport photos.</p><a href="#passport" class="btn">Use Tool</a></article>
-        <article class="card"><div class="emoji">📄</div><h3>Image to PDF Converter</h3><p>Convert multiple images into one PDF.</p><a href="#pdf" class="btn">Use Tool</a></article>
-        <article class="card"><div class="emoji">📊</div><h3>Percentage Calculator</h3><p>Calculate Matric and Inter percentage.</p><a href="#percentage" class="btn">Use Tool</a></article>
-        <article class="card"><div class="emoji">🎂</div><h3>Age Calculator</h3><p>Calculate your exact age.</p><a href="#age" class="btn">Use Tool</a></article>
-        <article class="card"><div class="emoji">🖼️</div><h3>Image Resizer</h3><p>Resize images for job applications.</p><a href="#resize" class="btn">Use Tool</a></article>
-        <article class="card"><div class="emoji">✍️</div><h3>Word Counter</h3><p>Count words, characters and sentences.</p><a href="#words" class="btn">Use Tool</a></article>
-    </div>
-</section>
-
-<section id="passport" class="container page">
-    <h2>Passport Size Photo Maker Pakistan</h2>
-    <div class="tool">
-        <input type="file" id="passportFile" accept="image/*">
-        <label><input type="checkbox" id="whiteBg"> Use white canvas</label>
-        <button onclick="makePassport()">Create Passport Photo</button>
-        <div id="passportResult" class="result"></div>
-    </div>
-    <div class="article">
-        <h3>How to use the Passport Photo Maker</h3>
-        <p>A passport-size photograph is often needed for educational admissions, job applications and official documents in Pakistan. Different organizations can require different photo dimensions, so always check their instructions before submitting your photograph.</p>
-        <p>Choose a clear photograph from your device. A well-lit photo with your face clearly visible usually gives better results. Select the white canvas option if you want a white canvas behind the image, then click Create Passport Photo. The tool creates a 35 × 45 mm image at 300 DPI and a printable sheet containing four copies.</p>
-        <p>The white canvas option does not automatically remove the original background. Review the finished photograph before using it for an official application. Keep your original photo so you can make another version if needed.</p>
-        <p>Processing happens in your browser. You do not need an account or paid subscription. The output is a JPG image that you can save to your device.</p>
-        <h3>Frequently Asked Questions</h3>
-        <details><summary>What is the photo size?</summary><p>35 × 45 mm at 300 DPI.</p></details>
-        <details><summary>Can I use it for job applications?</summary><p>Check the specific dimensions required by the employer.</p></details>
-        <details><summary>Does it remove backgrounds?</summary><p>No, the white option creates a white canvas only.</p></details>
-        <details><summary>Are my photos uploaded?</summary><p>The tool processes your image locally in your browser.</p></details>
-    </div>
-</section>
-
-<section id="pdf" class="container page">
-    <h2>Image to PDF Converter Online Free</h2>
-    <div class="tool">
-        <input type="file" id="pdfFiles" accept="image/*" multiple>
-        <div id="pdfPreview" class="result"></div>
-        <button onclick="convertPDF()">Download PDF</button>
-    </div>
-    <div class="article">
-        <h3>How to Convert Images into PDF</h3>
-        <p>Image-to-PDF conversion is useful when you need to submit scanned documents, certificates, notes or photographs as one file. Many application websites accept PDF documents instead of multiple separate images.</p>
-        <p>Select one or more images from your device. The tool displays a preview of your selected files. Each image will be placed on its own A4 PDF page. After conversion, download the resulting document.</p>
-        <p>Use clear and readable images. Make sure certificates and other documents are correctly oriented and that all important information is visible. Check the final PDF before submitting it.</p>
-        <p>This converter works in your browser and does not require registration. The PDF is created on your device. Check the file-size limit of the website where you plan to upload it.</p>
-        <h3>Frequently Asked Questions</h3>
-        <details><summary>Can I convert multiple images?</summary><p>Yes, select multiple images.</p></details>
-        <details><summary>Does each image get a separate page?</summary><p>Yes, each image gets its own A4 page.</p></details>
-        <details><summary>Do I need an account?</summary><p>No account is needed.</p></details>
-        <details><summary>Are images uploaded?</summary><p>No, conversion happens in your browser.</p></details>
-    </div>
-</section>
-
-<section id="percentage" class="container page">
-    <h2>Percentage Calculator Pakistan</h2>
-    <div class="tool">
-        <label>Obtained Marks</label>
-        <input type="number" id="obtained" placeholder="Enter obtained marks">
-        <label>Total Marks</label>
-        <input type="number" id="total" placeholder="Enter total marks">
-        <button onclick="calculatePercentage()">Calculate Percentage</button>
-        <div id="percentageResult" class="result"></div>
-    </div>
-    <div class="article">
-        <h3>How to Calculate Your Marks Percentage</h3>
-        <p>Students in Pakistan often need to calculate their Matric, Intermediate and university marks percentage. A percentage shows how many marks you obtained compared with the total marks available in an examination.</p>
-        <p>Enter your obtained marks in the first field and total marks in the second field. Press the calculate button to see your percentage. The formula is obtained marks divided by total marks, multiplied by 100.</p>
-        <p>For example, 850 marks out of 1100 gives approximately 77.27%. This calculation can help you understand your result and compare it with admission requirements.</p>
-        <p>Grade boundaries differ between educational boards and institutions. The grade displayed by this calculator is an estimate, not an official board grade or admission decision.</p>
-        <h3>Frequently Asked Questions</h3>
-        <details><summary>How is percentage calculated?</summary><p>Divide obtained marks by total marks and multiply by 100.</p></details>
-        <details><summary>Can I calculate Matric percentage?</summary><p>Yes, enter your Matric marks.</p></details>
-        <details><summary>Can I calculate Intermediate percentage?</summary><p>Yes, the same formula works.</p></details>
-        <details><summary>Are grades official?</summary><p>No, grade boundaries vary.</p></details>
-    </div>
-</section>
-
-<section id="age" class="container page">
-    <h2>Age Calculator</h2>
-    <div class="tool">
-        <label>Date of Birth</label>
-        <input type="date" id="dob">
-        <button onclick="calculateAge()">Calculate Age</button>
-        <div id="ageResult" class="result"></div>
-    </div>
-    <div class="article">
-        <h3>How to Calculate Your Exact Age</h3>
-        <p>An age calculator helps you find your current age using your date of birth. It can be useful for school forms, job applications, registration forms and other documents that ask for your age.</p>
-        <p>Select your date of birth and click Calculate Age. The tool displays your age in years, months and days. It also calculates the time remaining until your next birthday.</p>
-        <p>Always enter the correct date of birth. For official applications, use the date shown on your relevant identity or educational document. The calculation uses your device's current date.</p>
-        <p>The tool works directly in your browser. You do not need to register or send your date of birth to an external service.</p>
-        <h3>Frequently Asked Questions</h3>
-        <details><summary>Does it show years, months and days?</summary><p>Yes.</p></details>
-        <details><summary>Can I calculate another person's age?</summary><p>Yes, enter their date of birth.</p></details>
-        <details><summary>Does it calculate the next birthday?</summary><p>Yes, it shows the time remaining.</p></details>
-        <details><summary>Is my date of birth uploaded?</summary><p>No, the calculation happens in your browser.</p></details>
-    </div>
-</section>
-
-<section id="resize" class="container page">
-    <h2>Image Resizer for Government Job Forms</h2>
-    <div class="tool">
-        <input type="file" id="resizeFile" accept="image/*">
-        <label>Target file size</label>
-        <select id="targetSize">
-            <option value="50">50 KB</option>
-            <option value="100">100 KB</option>
-            <option value="200">200 KB</option>
-        </select>
-        <button onclick="resizeImage()">Resize Image</button>
-        <div id="resizeResult" class="result"></div>
-    </div>
-    <div class="article">
-        <h3>How to Resize Images for Government Job Forms</h3>
-        <p>Many online job application forms specify a maximum image file size. A photograph that is too large may not upload successfully. An image resizer can help create a smaller JPG image for online submission.</p>
-        <p>Select a photograph and choose a target size such as 50 KB, 100 KB or 200 KB. Click the resize button to generate a compressed JPG image.</p>
-        <p>Compression can affect picture quality. Preview the result and make sure important details remain clear. The resulting file size is an estimate and may differ depending on the original image.</p>
-        <p>Different recruitment websites may require different dimensions, formats and file sizes. Read the official application instructions before uploading your photograph.</p>
-        <h3>Frequently Asked Questions</h3>
-        <details><summary>Can I resize to 50 KB?</summary><p>Yes, select 50 KB.</p></details>
-        <details><summary>Does resizing affect quality?</summary><p>Compression can reduce quality.</p></details>
-        <details><summary>Which format is downloaded?</summary><p>JPG format.</p></details>
-        <details><summary>Is the exact file size guaranteed?</summary><p>No, the target is an estimate.</p></details>
-    </div>
-</section>
-
-<section id="words" class="container page">
-    <h2>Free Online Word Counter</h2>
-    <div class="tool">
-        <textarea id="wordText" placeholder="Paste or type your text here..." oninput="countWords()"></textarea>
-        <div id="wordResult" class="result">Words: 0 | Characters: 0 | Sentences: 0 | Reading time: 0 min</div>
-    </div>
-    <div class="article">
-        <h3>How to Use the Word Counter</h3>
-        <p>A word counter is useful for students, writers, job seekers and anyone who prepares written documents. Assignments, essays, applications and online forms sometimes have word or character limits.</p>
-        <p>Paste your text into the text area or type directly. The tool automatically updates the number of words, characters and sentences. It also estimates reading time using an approximate reading speed.</p>
-        <p>Students can use this tool to check whether an assignment meets a required word count. Writers can monitor the length of articles, and job seekers can check written application responses.</p>
-        <p>The result is calculated in your browser. Your text is not intentionally uploaded to a PakTools server. Different platforms may count words and characters differently.</p>
-        <h3>Frequently Asked Questions</h3>
-        <details><summary>Does it count words automatically?</summary><p>Yes, as you type.</p></details>
-        <details><summary>Can I count characters?</summary><p>Yes, including spaces.</p></details>
-        <details><summary>Does it show reading time?</summary><p>Yes, an approximate estimate.</p></details>
-        <details><summary>Is my text stored?</summary><p>The tool does not intentionally upload or save your text.</p></details>
-    </div>
-</section>
-
-<section id="about" class="container page">
-    <h2>About PakTools</h2>
-    <div class="article">
-        <h3>Our Mission</h3>
-        <p>PakTools was created to help Pakistani students and job seekers use free online tools without paying any money. We believe useful digital services should be simple and accessible to everyone.</p>
-        <p>Our tools help with passport photographs, PDF conversion, percentage calculations, age calculations, image resizing and word counting.</p>
-        <p>We aim to keep PakTools simple, mobile-friendly and easy to use. No account is required for the tools currently provided.</p>
-    </div>
-</section>
-
-<section id="contact" class="container page">
-    <h2>Contact Us</h2>
-    <div class="tool">
-        <form id="contactForm">
-            <label>Name</label>
-            <input type="text" id="contactName" required>
-            <label>Email</label>
-            <input type="email" id="contactEmail" required>
-            <label>Message</label>
-            <textarea id="contactMessage" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="contactStatus" class="result"></p>
-    </div>
-</section>
-
-<section id="privacy" class="container page">
-    <h2>Privacy Policy</h2>
-    <div class="article">
-        <h3>1. Introduction</h3>
-        <p>PakTools respects the privacy of its visitors. This policy explains how information is handled when you use our website.</p>
-        <h3>2. Uploaded Files</h3>
-        <p>Our tools are designed to process images and text directly in your browser. PakTools does not intentionally upload, store or save the photos and files processed by these tools on a PakTools server.</p>
-        <h3>3. Personal Information</h3>
-        <p>The contact form opens your email application to prepare a message. Information you choose to send by email is handled by your email provider and the recipient.</p>
-        <h3>4. Cookies and Advertising</h3>
-        <p>Hosting providers and future third-party services, such as advertising or analytics providers, may use cookies or similar technologies. This policy must be updated when such services are added.</p>
-        <h3>5. Third-Party Services</h3>
-        <p>External services have their own privacy policies. Review those policies when using third-party services linked from this website.</p>
-        <h3>6. Policy Updates</h3>
-        <p>This policy may be updated when website features or services change.</p>
-    </div>
-</section>
-
-<section id="terms" class="container page">
-    <h2>Terms of Service</h2>
-    <div class="article">
-        <h3>1. Acceptance</h3>
-        <p>By using PakTools, you agree to these terms. If you do not agree, please stop using the website.</p>
-        <h3>2. Free Tools</h3>
-        <p>PakTools provides free browser-based tools for general convenience. Features may be changed, updated or discontinued.</p>
-        <h3>3. Accuracy</h3>
-        <p>Results are provided for general informational purposes. Always verify official requirements before submitting documents or applications.</p>
-        <h3>4. User Responsibility</h3>
-        <p>You are responsible for ensuring that you have permission to use the images and documents you process through the website.</p>
-        <h3>5. Availability</h3>
-        <p>We aim to keep PakTools available, but cannot guarantee uninterrupted access.</p>
-    </div>
-</section>
-</main>
-
-<footer>
-    <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#tools">Tools</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#terms">Terms</a>
-    </div>
-    <p>© 2026 PakTools. All rights reserved.</p>
-    <p>Made for Pakistan 🇵🇰</p>
-</footer>
-
-<script src="script.js"></script>
+<div class="wrap">
+<p style="text-align:center;">Apna tool chuno 👇</p>
+<div class="card"><b>📸 Image Resizer</b><a href="/image-resizer/">Open →</a></div>
+<div class="card"><b>🎂 Age Calculator</b><a href="/age-calculator/">Open →</a></div>
+<div class="card"><b>⚖️ BMI Calculator</b><a href="/bmi-calculator/">Open →</a></div>
+<div class="card"><b>📄 Image to PDF</b><a href="/image-to-pdf/">Open →</a></div>
+<p style="text-align:center;color:#666;margin-top:25px;">Abhi sirf Home Page ban raha hai. Agle step me hum Image Resizer ka alag page banayenge.</p>
+</div>
+<footer>Made with ❤️ in Pakistan | PakTools</footer>
 </body>
 </html>
