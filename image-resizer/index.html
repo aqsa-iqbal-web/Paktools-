@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Resizer Online Free - Resize Image in Seconds | PakTools</title>
+<meta name="description" content="Free Image Resizer Online. Resize image to 100x100, 200x200, passport size, or custom size. No signup, fast & secure.">
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f8fafc;color:#111}
+header{background:#2563eb;color:#fff;padding:20px 15px;text-align:center}
+header a{color:#fff;text-decoration:none}
+.wrap{max-width:650px;margin:0 auto;padding:20px 15px}
+.box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px}
+input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:8px;font-size:16px}
+button{width:100%;background:#2563eb;color:#fff;border:0;padding:14px;border-radius:8px;font-size:17px;font-weight:bold;cursor:pointer}
+button:disabled{background:#94a3b8}
+img{max-width:100%;margin-top:15px;border-radius:10px;display:none}
+#download{display:none;background:#16a34a;color:#fff;text-align:center;padding:14px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px}
+</style>
+</head>
+<body>
+<header><a href="/">← PakTools</a><h1 style="margin:8px 0 0;">Image Resizer 📸</h1><p style="opacity:.9;margin:5px 0 0;">Resize any image free, no signup</p></header>
+<div class="wrap">
+<div class="box">
+<p><b>1. Image Chuno</b></p>
+<input type="file" id="file" accept="image/*">
+<p><b>2. New Size Likho</b></p>
+<div style="display:flex;gap:10px;"><input type="number" id="w" placeholder="Width e.g. 500" value="500"><input type="number" id="h" placeholder="Height e.g. 500" value="500"></div>
+<p style="font-size:13px;color:#666;">Tip: Passport ke liye 600x600, WhatsApp DP ke liye 500x500</p>
+<button onclick="resize()">Resize Image →</button>
+<img id="preview">
+<a id="download" download="resized-image.png">⬇ Download Resized Image</a>
+<p id="msg" style="text-align:center;color:#16a34a;font-weight:bold;"></p>
+</div>
+<h2>How to Resize Image?</h2>
+<p>1. Image upload karo, 2. Width / Height likho, 3. Resize dabao aur Download kar lo. Tumhari image kabhi server pe nahi jati, sab kuch tumhare mobile me hi hota hai, is liye 100% safe hai.</p>
+<p><a href="/">← Back to All Tools</a></p>
+</div>
+<script>
+let imgObj=null;
+document.getElementById('file').addEventListener('change',e=>{
+let f=e.target.files[0]; if(!f) return;
+let r=new FileReader(); r.onload=ev=>{imgObj=new Image(); imgObj.onload=()=>{document.getElementById('preview').src=ev.target.result; document.getElementById('preview').style.display='block';}; imgObj.src=ev.target.result;}; r.readAsDataURL(f);
+});
+function resize(){
+if(!imgObj){alert('Pehle image chuno!'); return;}
+let w=parseInt(document.getElementById('w').value)||500;
+let h=parseInt(document.getElementById('h').value)||500;
+let c=document.createElement('canvas'); c.width=w; c.height=h;
+c.getContext('2d').drawImage(imgObj,0,0,w,h);
+let url=c.toDataURL('image/png');
+let d=document.getElementById('download'); d.href=url; d.style.display='block';
+document.getElementById('preview').src=url;
+document.getElementById('msg').innerText='Ho gaya! Ab Download dabao ✅';
+}
+</script>
+</body>
+</html>
